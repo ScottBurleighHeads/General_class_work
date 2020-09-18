@@ -1,0 +1,13 @@
+name: continuous integration
+on:
+  push:
+      branches: [master]
+
+jobs: 
+  test_suite:
+    runs-on: ubuntu-latest
+    Steps:
+      - name: Checkout Branch 
+        uses: actions/checkout@v2
+
+
